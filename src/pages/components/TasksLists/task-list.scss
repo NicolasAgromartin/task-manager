@@ -1,0 +1,55 @@
+// imports
+@import '../../../assets/main.scss';
+
+
+.tasks-list {
+  width: 100%; 
+  padding: 5px; margin-top: 15px;
+  
+  @include  medium-device{
+    width: 500px;
+  }
+
+  li {
+    width: 100%; min-height: 40px;
+    border: 3px solid $gray;
+    box-shadow: inset 0 0 50px 1px $gray;
+    padding: 0 15px 0 15px; border-radius: 3px;
+    margin: 10px 0;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap;
+    transition: .3s;
+     
+    span{
+      width: 70px; height: 100%;
+      display: flex; justify-content: space-between; 
+
+      .icon{
+        cursor: pointer;
+        font-size: 28px;
+        color: $black;
+        transition: .3s;
+      }
+      .modify-button {
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+
+// cuando se taggea la tarea como completada se aplica esta clase a la tarea seleccionada
+
+.tasks-list .task-completed {
+  border: 3px solid $light-blue ;
+  box-shadow: inset 0 0 50px 1px $light-blue ;
+  text-decoration: line-through;
+  color: $dark-gray;
+
+  .icon{
+    color: $black ;
+  }
+
+  .modify-button {
+    color: $light-blue ;
+  }
+}

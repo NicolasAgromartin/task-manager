@@ -1,0 +1,13 @@
+@import './reset.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+
+body {
+  width: 100%; min-height: 100vh;
+  background: $background-color;
+  background: #444;
+  @include flexCenter(column);
+  padding-bottom: 20px;
+}
+
