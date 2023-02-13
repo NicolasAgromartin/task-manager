@@ -5,7 +5,7 @@
 .tasks-list {
   width: 100%; 
   padding: 5px; margin-top: 15px;
-  
+  margin-bottom: 40px;
   @include  medium-device{
     width: 500px;
   }
